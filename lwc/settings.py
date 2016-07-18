@@ -118,7 +118,7 @@ USE_L10N = True
 USE_TZ = True
 
 #SHARE_URL = "http://launchwithcode.com/?ref="
-SHARE_URL = "http://localhost:8000/?ref="
+SHARE_URL = "osbornelaunch.herokuapp.com/?ref="
 
 
 # Static files (CSS, JavaScript, Images)
