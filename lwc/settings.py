@@ -24,6 +24,7 @@ SECRET_KEY = '0dq!!ec9a#qk%vzz1hzy*cj_*=tlkc_^je+o5+$k^t70eb8^*y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['osbornelaunch.herokuapp.com']
 
