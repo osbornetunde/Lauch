@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0dq!!ec9a#qk%vzz1hzy*cj_*=tlkc_^je+o5+$k^t70eb8^*y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['*']
@@ -130,7 +130,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'web/static'),
     )
 
 # MEDIA_ROOT = ''
@@ -140,4 +140,5 @@ MEDIA_URL = '/media/'
 import dj_database_url
 
 DATABASES['default'] = dj_database_url.config()
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
