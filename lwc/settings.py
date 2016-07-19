@@ -125,6 +125,11 @@ SHARE_URL = "osbornelaunch.herokuapp.com/?ref="
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates')
+    )
+
+
 STATIC_URL = '/static/'
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 STATIC_ROOT = 'static'
